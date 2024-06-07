@@ -1,0 +1,46 @@
+<%- include("partials/header")%>
+
+<%- include("partials/nav")%>
+<body class="bg-dark text-white">
+
+    <div class="container mt-3">
+      <div class="row">
+        <!-- Left side: Book Image -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img src="https://images.unsplash.com/photo-1593340010859-83edd3d6d13f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fGJvb2t8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Book Image">
+        </div>
+        <!-- Right side: Book Detail Form -->
+        <div class="col-md-6">
+          <h3>Book Details</h3>
+          <form>
+            <div class=mb-2>
+              <label for="bookPoster" class="form-label">Book Poster</label>
+              <input type="url" class="form-control" id="bookPoster" required placeholder="Book Poster">
+            </div>
+            <div class="mb-2">
+              <label for="bookName" class="form-label">Book Name</label>
+              <input type="text" class="form-control" id="bookName" placeholder="Enter book name" required>
+            </div>
+            <div class="mb-2">
+              <label for="authorName" class="form-label">Author Name</label>
+              <input type="text" class="form-control" id="authorName" placeholder="Enter author name" required>
+            </div>
+            <div class="mb-2">
+              <label for="isbnNumber" class="form-label">ISBN Number</label>
+              <input type="text" class="form-control" id="isbnNumber" placeholder="Enter ISBN number" required>
+            </div>
+            <div class="mb-2">
+              <label for="bookPrice" class="form-label">Book Price</label>
+              <input type="number" class="form-control" id="bookPrice" placeholder="Enter book price" required>
+            </div>
+            <div class="mb-2">
+              <label for="bookDescription" class="form-label">Book Description</label>
+              <textarea class="form-control" id="bookDescription" rows="3" placeholder="Enter book description" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <%- include("partials/footer")%>

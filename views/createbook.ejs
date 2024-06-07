@@ -1,0 +1,56 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+
+<div class="container mt-3">
+    <h1 class="display-4 text-center">Create Book Here👇</h1>
+  </div>
+<body class="bg-dark text-light">
+
+    <div class="container mt-2">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <!-- Book Poster -->
+            <div class="mb-1">
+              <label for="bookPoster" class="form-label">Book Poster</label>
+              <input type="url" class="form-control" id="bookPoster" placeholder="Book Poster">
+            </div>
+            <!-- Book Name -->
+            <div class="mb-1">
+              <label for="bookName" class="form-label">Book Name</label>
+              <input type="text" class="form-control" id="bookName" placeholder="Enter book name">
+            </div>
+            <!-- Author Name -->
+            <div class="mb-1">
+              <label for="authorName" class="form-label">Author Name</label>
+              <input type="text" class="form-control" id="authorName" placeholder="Enter author name">
+            </div>
+            <!-- ISBN Number -->
+            <div class="mb-1">
+              <label for="isbnNumber" class="form-label">ISBN Number</label>
+              <input type="text" class="form-control" id="isbnNumber" placeholder="Enter ISBN number">
+            </div>
+            <!-- Book Price -->
+            <div class="mb-1">
+              <label for="bookPrice" class="form-label">Book Price</label>
+              <input type="text" class="form-control" id="bookPrice" placeholder="Enter book price">
+            </div>
+            <!-- Book Description -->
+            <div class="mb-1">
+              <label for="bookDescription" class="form-label">Book Description</label>
+              <textarea class="form-control" id="bookDescription" rows="3" placeholder="Enter book description"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<%- include("partials/footer")%>
